@@ -420,41 +420,7 @@ Figure~\ref{normalQuantileExerAdditional} shows normal probability plots for two
 \textB{\pagebreak}
 
 
-\subsection{Constructing a normal probability plot (special topic)}
-\label{constructNormalProbabilityPlotSection}
-
-We construct a normal probability plot for the heights of a sample of 100 men as follows:
-\begin{enumerate}
-\setlength{\itemsep}{0mm}
-\item[(1)] Order the observations.
-\item[(2)] Determine the percentile of each observation in the ordered data set.
-\item[(3)] Identify the Z score corresponding to each percentile.
-\item[(4)] Create a scatterplot of the observations (vertical) against the Z scores (horizontal).
-\end{enumerate}
-If the observations are normally distributed, then their Z scores will approximately correspond to their percentiles and thus to the $z_i$ in Table~\ref{normalQuantileConstructionTable}.
-
-\begin{table}[hh]
-\centering
-\begin{tabular}{l c r r r c r}
-   \hline
-   Observation $i$ & \hspace{2mm} & 1 & 2 & 3 & $\cdots$ & 100 \\
-   \hline
-   $x_i$ && 61 & 63 & 63 & $\cdots$ & 78 \\
-   Percentile && 0.99\% & 1.98\% & 2.97\% & $\cdots$ & 99.01\% \\
-   $z_i$ && $-2.33$ & $-2.06$ & $-1.89$ & $\cdots$ & $2.33$ \\
-   \hline
-\end{tabular}
-\caption{Construction details for a normal probability plot of 100 men's heights. The first observation is assumed to be at the $0.99^{th}$ percentile, and the $z_i$ corresponding to a lower tail of 0.0099 is $-2.33$. To create the plot based on this table, plot each pair of points, $(z_i, x_i)$.}
-\label{normalQuantileConstructionTable}
-\end{table}
-
-\begin{caution}{$z_i$ correspond to percentiles}{
-The $z_i$ in Table~\ref{normalQuantileConstructionTable} are \emph{not} the Z scores of the observations but only correspond to the percentiles of the observations.}
-\end{caution}
-
-Because of the complexity of these calculations, normal probability plots are generally created using statistical software.
-
-\index{normal probability plot|)}
+%\index{normal probability plot|)}
 \index{distribution!normal|)}
 
 
