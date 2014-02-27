@@ -1,0 +1,11 @@
+# Latex files
+
+*.aux
+*.pdf
+*.ps
+*.log
+*.dvi
+*.tex~
+
+$ Mac finder files and hidden folders
+.DS_Store
