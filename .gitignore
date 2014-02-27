@@ -9,8 +9,6 @@
 *.acn
 *.acr
 *.alg
-*.bbl
-*.blg
 *.tui
 *.top
 *.tmp
@@ -28,6 +26,13 @@
 *.mtc1
 *.out
 *.synctex.gz
+
+
+# bibtex
+*.bbl
+*.blg
+*.bcf
+
  
 # Mac IDE files
 *.swp
