@@ -1,11 +1,41 @@
 # Latex files
-
+ 
 *.aux
-*.pdf
-*.ps
+*.glo
+*.idx
 *.log
-*.dvi
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.tui
+*.top
+*.tmp
 *.tex~
-
-$ Mac finder files and hidden folders
+*.mp
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+ 
+# Mac IDE files
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+ 
+# Mac finder files and hidden folders
 .DS_Store
