@@ -8,7 +8,7 @@ Chapter~\ref{foundationsForInference} introduced a framework for statistical inf
 \item Identify an appropriate distribution for the point estimate or test statistic.
 \item Apply the ideas from Chapter~\ref{foundationsForInference} using the distribution from step 2.
 \end{enumerate}
-Each section in Chapter~\ref{inferenceForNumericalData} explores a new situation: the difference of two means (\ref{pairedData},~\ref{differenceOfTwoMeans}); a~single mean or difference of means where we relax the minimum sample size condition (\ref{oneSampleMeansWithTDistribution},~\ref{theTDistributionForTheDifferenceOfTwoMeans}); and the comparison of means across multiple groups (\ref{anovaAndRegrWithCategoricalVariables}). Chapter~\ref{inferenceForCategoricalData} will introduce scenarios that highlight categorical data.
+Each section in Chapter~\ref{inferenceForNumericalData} explores a new situation: the difference of two means (\ref{pairedData},~\ref{differenceOfTwoMeans}); a~single mean or difference of means where we relax the minimum sample size condition (\ref{oneSampleMeansWithTDistribution}); and the comparison of means across multiple groups (\ref{anovaAndRegrWithCategoricalVariables}). Chapter~\ref{inferenceForCategoricalData} will introduce scenarios that highlight categorical data.
 
 
 %__________________
@@ -124,7 +124,7 @@ We are 95\% confident that Amazon is, on average, between \$9.49 and \$16.03 che
 \section{Difference of two means}
 \label{differenceOfTwoMeans}
 
-In this section we consider a difference in two population means, $\mu_1 - \mu_2$, under the condition that the data are not paired. The methods are similar in theory but different in the details. Just as with a single sample, we identify conditions to ensure a point estimate of the difference $\bar{x}_1 - \bar{x}_2$ is nearly normal. Next we introduce a formula for the standard error, which allows us to apply our general tools from Section~\ref{aFrameworkForInference}.
+In this section we consider a difference in two population means, $\mu_1 - \mu_2$, under the condition that the data are not paired. The methods are similar in theory but different in the details. Just as with a single sample, we identify conditions to ensure a point estimate of the difference $\bar{x}_1 - \bar{x}_2$ is nearly normal. Next we introduce a formula for the standard error.
 
 We apply these methods to two examples: participants in the 2012 Cherry Blossom Run and newborn infants. This section is motivated by questions like ``Is there convincing evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who don't smoke?''
 
@@ -854,7 +854,7 @@ The p-value is larger than 0.05, indicating the evidence is not strong enough to
 
 The calculations required to perform an ANOVA by hand are tedious and prone to human error. For these reasons, it is common to use statistical software to calculate the $F$ statistic and p-value.
 
-An ANOVA can be summarized in a table very similar to that of a regression summary, which we will see in \MultipleRegressionChapter{Chapters~\ref{linRegrForTwoVar} and~\ref{multipleAndLogisticRegression}}{Chapter~\ref{linRegrForTwoVar}}. Table~\ref{anovaSummaryTableForOBPAgainstPosition} shows an ANOVA summary to test whether the mean of on-base percentage varies by player positions in the MLB. Many of these values should look familiar; in particular, the $F$ test statistic and p-value can be retrieved from the last columns.
+Table~\ref{anovaSummaryTableForOBPAgainstPosition} shows an ANOVA summary to test whether the mean of on-base percentage varies by player positions in the MLB. Many of these values should look familiar; in particular, the $F$ test statistic and p-value can be retrieved from the last columns.
 
 \begin{table}[ht]
 \centering

@@ -296,7 +296,7 @@ We know that the sample standard deviation is 8 and the sample size is 20. For w
 
 % 37
 
-\eoce{\qt{Chicken diet and weight, Part III} In Exercises~\ref{chicks} and \ref{chicksCasein} we compared the effects of two types of feed at a time. A better analysis would first consider all feed types at once: casein, horsebean, linseed, meat meal, soybean, and sunflower. The ANOVA output below can be used to test for differences between the average weights of chicks on different diets.
+\eoce{\qt{Chicken diet and weight} If we're raising chicks, we could compare the effects of two types of feed at a time. A better analysis would first consider all feed types at once: casein, horsebean, linseed, meat meal, soybean, and sunflower. The ANOVA output below can be used to test for differences between the average weights of chicks on different diets.
 \begin{center}
 \begin{tabular}{lrrrrr}
 \hline
@@ -523,25 +523,3 @@ If the null hypothesis that the means of four groups are all the same is rejecte
 \item the appropriate $\alpha$ to be used in pairwise comparisons is 0.05 / 4 = 0.0125 since there are four groups.
 \end{parts}
 }{}
-
-% 45
-
-\eoce{\qt{Prison isolation experiment, Part II} Exercise~\ref{prison} introduced an experiment that was conducted with the goal of identifying a treatment that reduces subjects' psychopathic deviant T scores, where this score measures a person's need for control or his rebellion against control. In Exercise~\ref{prison} you evaluated the success of each treatment individually. An alternative analysis involves comparing the success of treatments. The relevant ANOVA output is given below.
-\begin{center}
-\begin{tabular}{lrrrrr}
-  \hline
- & Df & Sum Sq & Mean Sq & F value & Pr($>$F) \\ 
-  \hline
-treatment & 2 & 639.48 & 319.74 & 3.33 & 0.0461 \\ 
-  Residuals & 39 & 3740.43 & 95.91 &  &  \\ 
-   \hline
-\multicolumn{6}{r}{$s_{pooled} = 9.793$ on $df=39$}
-\end{tabular}
-\end{center}
-\begin{parts}
-\item What are the hypotheses?
-\item What is the conclusion of the test? Use a 5\% significance level.
-\item If in part~(b) you determined that the test is significant, conduct pairwise tests to determine which groups are different from each other. If you did not reject the null hypothesis in part~(b), recheck your solution.
-\end{parts}
-}{}
-
