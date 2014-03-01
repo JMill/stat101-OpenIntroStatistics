@@ -272,7 +272,7 @@ When fitting a least squares line, we generally require
 When this condition is found to be unreasonable, it is usually because of outliers or concerns about influential points, which we  will discuss in greater depth in Section~\ref{typesOfOutliersInLinearRegression}. An example of non-normal residuals is shown in the second panel of Figure~\ref{whatCanGoWrongWithLinearModel}.
 \item[Constant variability.] The variability of points around the least squares line remains roughly constant. An example of non-constant variability is shown in the third panel of Figure~\ref{whatCanGoWrongWithLinearModel}.
 \end{description}
-Be cautious about applying regression to data collected sequentially in what is called a \term{time series}. Such data may have an underlying structure that should be considered in a model and analysis. \MultipleRegressionChapter{There are other instances where correlations within the data are important. This topic will be further discussed in Chapter~\ref{multipleRegressionAndANOVA}.}{There are other instances where correlations between observations are important, though we postpone details until a later course.}
+Be cautious about applying regression to data collected sequentially in what is called a \term{time series}. Such data may have an underlying structure that should be considered in a model and analysis.
 
 \begin{figure}
 \centering
@@ -515,8 +515,6 @@ The slope indicates that, on average, new games sell for about \$10.90 more than
 \begin{tipBox}{\tipBoxTitle{Interpreting model estimates for categorical predictors.}
 The estimated intercept is the value of the response variable for the first category (i.e. the category corresponding to an indicator value of 0). The estimated slope is the average change in the response variable between the two categories.}
 \end{tipBox}
-
-\MultipleRegression{We'll elaborate further on this Ebay auction data in Chapter~\ref{multipleRegressionAndANOVA}, where we examine the influence of many predictor variables simultaneously using multiple regression\index{multiple regression}. In multiple regression, we will consider the association of auction price with regard to each variable while controlling for the influence of other variables. This is especially important since some of the predictors are associated. For example, auctions with games in new condition also often came with more accessories.}{}
 
 
 %__________________
