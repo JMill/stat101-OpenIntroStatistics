@@ -478,7 +478,7 @@ Figure~\ref{multiunitsVsOwnership} shows a negative association between the home
 
 Observational studies come in two forms: prospective and retrospective studies. A \term{prospective study} identifies individuals and collects information as events unfold. For instance, medical researchers may identify and follow a group of similar individuals over many years to assess the possible influences of behavior on cancer risk. One example of such a study is The Nurses’ Health Study, started in 1976 and expanded in 1989.\footnote{\urlwofont{http://www.channing.harvard.edu/nhs/}} This prospective study recruits registered nurses and then collects data from them using questionnaires. \termsub{Retrospective studies}{retrospective studies} collect data after events have taken place, e.g. researchers may review past events in medical records. Some data sets, such as \data{county}, may contain both prospectively- and retrospectively-collected variables. Local governments prospectively collect some variables as events unfolded (e.g. retails sales) while the federal government retrospectively collected others during the 2010 census (e.g. county population counts).
 
-\subsection{Three sampling methods (special topic)}
+\subsection{Three sampling methods}
 \label{threeSamplingMethods}
 
 Almost all statistical methods are based on the notion of implied randomness. If observational data are not collected in a random framework from a population, these statistical methods -- the estimates and errors associated with the estimates -- are not reliable. Here we consider three random sampling techniques: simple, stratified, and cluster sampling. Figure~\ref{samplingMethodsFigure} provides a graphical representation of these techniques.
@@ -899,50 +899,6 @@ The median and IQR are only sensitive to numbers near $Q_1$, the median, and $Q_
 The distribution of vehicle prices tends to be right skewed, with a few luxury and sports cars lingering out into the right tail. If you were searching for a new car and cared about price, should you be more interested in the mean or median price of vehicles sold, assuming you are in the market for a regular car?\footnote{Buyers of a ``regular car'' should be concerned about the median price. High-end car sales can drastically inflate the mean price while the median will be more robust to the influence of those sales.}
 \end{exercise}
 
-\subsection{Transforming data (special topic)}
-\label{transformingDataSubsection}
-
-When data are very strongly skewed, we sometimes transform them so they are easier to model. Consider the histogram of salaries for Major League Baseball players' salaries from 2010, which is shown in Figure~\ref{histMLBSalariesReg}.
-
-\begin{figure}[ht]
-\centering
-\subfigure[]{
-\includegraphics[width=0.46\textwidth]{01/figures/histMLBSalaries/histMLBSalariesReg}
-\label{histMLBSalariesReg}
-}
-\subfigure[]{
-\includegraphics[width=0.46\textwidth]{01/figures/histMLBSalaries/histMLBSalariesLog}
-\label{histMLBSalariesLog}
-}
-\caption{\subref{histMLBSalariesReg} Histogram of MLB player salaries for 2010, in millions of dollars. \subref{histMLBSalariesLog} Histogram of the log-transformed MLB player salaries for 2010.}
-\label{histMLBSalaries}
-\end{figure}
-
-\begin{example}{The histogram of MLB player salaries is useful in that we can see the data are extremely skewed\index{skew!example: extreme} and centered (as gauged by the median) at about \$1 million. What isn't useful about this plot?}
-Most of the data are collected into one bin in the histogram and the data are so strongly skewed that many details in the data are obscured.
-\end{example}
-
-There are some standard transformations that are often applied when much of the data cluster near zero (relative to the larger values in the data set) and all observations are positive. A \term{transformation} is a rescaling of the data using a function. For instance, a plot of the natural logarithm\footnote{Statisticians often write the natural logarithm as $\log$. You might be more familiar with it being written as $\ln$.} of player salaries results in a new histogram in Figure~\ref{histMLBSalariesLog}. Transformed data are sometimes easier to work with when applying statistical models because the transformed data are much less skewed and outliers are usually less extreme.
-
-Transformations can also be applied to one or both variables in a scatterplot. A scatterplot of the \var{line\_\hspace{0.3mm}breaks} and \var{num\_\hspace{0.3mm}char} variables is shown in Figure~\ref{email50LinesCharactersMod}, which was earlier shown in Figure~\ref{email50LinesCharacters}. We can see a positive association between the variables and that many observations are clustered near zero. In Chapter~\ref{linRegrForTwoVar}, we might want to use a straight line to model the data. However, we'll find that the data in their current state cannot be modeled very well. Figure~\ref{email50LinesCharactersModLog} shows a scatterplot where both the \var{line\_\hspace{0.3mm}breaks} and \var{num\_\hspace{0.3mm}char} variables have been transformed using a log (base $e$) transformation. While there is a positive association in each plot, the transformed data show a steadier trend, which is easier to model than the untransformed data.
-
-\begin{figure}
-\centering
-\subfigure[]{
-\includegraphics[width=0.46\textwidth]{01/figures/email50LinesCharactersMod/email50LinesCharactersMod}
-\label{email50LinesCharactersMod}
-}
-\subfigure[]{
-\includegraphics[width=0.46\textwidth]{01/figures/email50LinesCharactersMod/email50LinesCharactersModLog}
-\label{email50LinesCharactersModLog}
-}
-\caption{\subref{email50LinesCharactersMod} Scatterplot of \var{line\_\hspace{0.3mm}breaks} against \var{num\_\hspace{0.3mm}char} for 50 emails. \subref{email50LinesCharactersModLog} A scatterplot of the same data but where each variable has been log-transformed.}
-\label{email50LinesCharactersModMain}
-\end{figure}
-
-Transformations other than the logarithm can be useful, too. For instance, the square root ($\sqrt{\text{original observation}}$) and inverse ($\frac{1}{\text{original observation}}$) are used by statisticians. Common goals in transforming data are to see the data structure differently, reduce skew, assist in modeling, or straighten a nonlinear relationship in a scatterplot.
-
-\index{data!email50|)}
 
 \subsection{Mapping data (special topic)}
 
