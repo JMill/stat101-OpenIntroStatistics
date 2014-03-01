@@ -58,7 +58,7 @@ If data come from a simple random sample and consist of less than 10\% of the po
 
 \index{point estimate!single proportion}
 
-We may want a confidence interval for the proportion of Americans who approve of the job the Supreme Court is doing. Our point estimate, based on a sample of size $n = 976$ from the NYTimes/CBS poll, is $\hat{p} = 0.44$. To use the general confidence interval formula from Section~\ref{aFrameworkForInference}, we must check the conditions to ensure that the sampling distribution of $\hat{p}$ is nearly normal. We also must determine the standard error of the estimate.
+We may want a confidence interval for the proportion of Americans who approve of the job the Supreme Court is doing. Our point estimate, based on a sample of size $n = 976$ from the NYTimes/CBS poll, is $\hat{p} = 0.44$. 
 
 The data are based on a simple random sample and consist of far fewer than 10\% of the U.S. population, so independence is confirmed. The sample size must also be sufficiently large, which is checked via the success-failure condition: there were approximately $976\times \hat{p}=429$ ``successes'' and $976\times (1-\hat{p})=547$ ``failures'' in the sample, both easily greater than~10.
 
@@ -124,11 +124,11 @@ Set up hypotheses and verify the conditions using the null value, $p_0$, to ensu
 
 \index{margin of error|(}
 
-We first encountered sample size computations in Section~\ref{sampleSizeAndPower}, which considered the case of estimating a single mean. We found that these computations were helpful in planning a study to control the size of the standard error of a point estimate. The task was to find a sample size $n$ so that the sample mean would be within some margin of error $m$ of the actual mean with a certain level of confidence. For example, the margin of error for a point estimate using 95\% confidence can be written as $1.96\times SE$. We set up a general equation to represent the problem:
+Sample size computations are helpful in planning a study to control the size of the standard error of a point estimate for a single mean. The task is to find a sample size $n$ so that the sample mean is within some margin of error $m$ of the actual mean with a certain level of confidence. For example, the margin of error for a point estimate using 95\% confidence can be written as $1.96\times SE$. We set up a general equation to represent the problem:
 \begin{align*}
 ME = z^{\star}SE \leq m
 \end{align*}
-where $ME$ represented the actual margin of error and $z^{\star}$ was chosen to correspond to the confidence level. The standard error formula is specified to correspond to the particular setting. For instance, in the case of means, the standard error was given as $\sigma / \sqrt{n}$. In the case of a single proportion, we use $\sqrt{p(1-p) / n\ }$ for the standard error.
+where $ME$ represented the actual margin of error and $z^{\star}$ is chosen to correspond to the confidence level. The standard error formula is specified to correspond to the particular setting. For instance, in the case of means, the standard error was given as $\sigma / \sqrt{n}$. In the case of a single proportion, we use $\sqrt{p(1-p) / n\ }$ for the standard error.
 
 Planning a sample size before collecting data is equally important when estimating a proportion. For instance, if we are conducting a university survey to determine whether students support a \$200 per year increase in fees to pay for a new football stadium, how big of a sample is needed to be sure the margin of error is less than 0.04 using a 95\% confidence level?
 
@@ -498,7 +498,7 @@ Figure~\ref{chiSquareDistributionWithInceasingDF} shows three chi-square distrib
 
 Figure~\ref{chiSquareDistributionWithInceasingDF} and Exercise~\ref{exerChiSquareDistributionDescriptionWithMoreDOF} demonstrate three general properties of chi-square distributions as the degrees of freedom increases: the distribution becomes more symmetric, the center moves to the right, and the variability inflates.
 
-Our principal interest in the chi-square distribution is the calculation of p-values, which (as we have seen before) is related to finding the relevant area in the tail of a distribution. To do so, a new table is needed: the \term{chi-square table}, partially shown in Table~\ref{chiSquareProbabilityTableShort}. A more complete table is presented in Appendix~\vref{chiSquareProbabilityTable}. This table is very similar to the $t$ table from Sections~\ref{oneSampleMeansWithTDistribution} and~\ref{theTDistributionForTheDifferenceOfTwoMeans}: we identify a range for the area, and we examine a particular row for distributions with different degrees of freedom. One important difference from the $t$ table is that the chi-square table only provides upper tail values.
+Our principal interest in the chi-square distribution is the calculation of p-values, which (as we have seen before) is related to finding the relevant area in the tail of a distribution. To do so, a new table is needed: the \term{chi-square table}, partially shown in Table~\ref{chiSquareProbabilityTableShort}. A more complete table is presented in Appendix~\vref{chiSquareProbabilityTable}. This table is very similar to the $t$ table from Section~\ref{oneSampleMeansWithTDistribution}: we identify a range for the area, and we examine a particular row for distributions with different degrees of freedom. One important difference from the $t$ table is that the chi-square table only provides upper tail values.
 
 \begin{table}[h]
 \centering
@@ -624,8 +624,6 @@ When examining a table with just two bins, pick a single bin and use the one-pro
 
 
 \subsection{Evaluating goodness of fit for a distribution}
-
-Section~\ref{geomDist} would be useful background reading for this example, but it is not a prerequisite.
 
 \index{data!S\&P500 stock data|(}
 
