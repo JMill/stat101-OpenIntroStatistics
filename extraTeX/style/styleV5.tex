@@ -148,12 +148,19 @@
 
 %-------------------------------------------------------------
 % 8 Figures and Captions
+% 8.1+2 Table and Figure Caption
+% source: http://stackoverflow.com/questions/3865036/using-a-single-count-for-figures-and-tables-in-latex
+\makeatletter
+\renewcommand*{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand*{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\let\c@table\c@figure
+\makeatother 
 % 8.1 Table Caption
-\DeclareCaptionFormat{nbTab}{Table\nobreakspace\refstepcounter{withinChNum}\setcounter{table}{\value{withinChNum}}\setcounter{figure}{\value{withinChNum}}\thechapter.\thewithinChNum:\nobreakspace#3}
-\captionsetup[table]{format=nbTab}
+%\DeclareCaptionFormat{nbTab}{Table\nobreakspace\refstepcounter{withinChNum}\setcounter{table}{\value{withinChNum}}\setcounter{figure}{\value{withinChNum}}\thechapter.\thewithinChNum:\nobreakspace#3}
+%\captionsetup[table]{format=nbTab}
 % 8.2 Figure Caption
-\DeclareCaptionFormat{nbFig}{Figure\nobreakspace\refstepcounter{withinChNum}\setcounter{table}{\value{withinChNum}}\setcounter{figure}{\value{withinChNum}}\thechapter.\thewithinChNum:\nobreakspace#3}
-\captionsetup[figure]{format=nbFig}
+%\DeclareCaptionFormat{nbFig}{Figure\nobreakspace\refstepcounter{withinChNum}\setcounter{table}{\value{withinChNum}}\setcounter{figure}{\value{withinChNum}}\thechapter.\thewithinChNum:\nobreakspace#3}
+%\captionsetup[figure]{format=nbFig}
 % 8.3 Caption Width
 \newlength{\mycaptionwidth}
 \setlength{\mycaptionwidth}{0.825\textwidth}
