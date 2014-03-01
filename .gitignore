@@ -29,7 +29,6 @@
 
 # bibtex
 
-*.bbl
 *.blg
 *.bcf
 
