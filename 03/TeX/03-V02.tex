@@ -447,6 +447,7 @@ But there are three other scenarios: Brittany, Caroline, or Damian could have be
 Verify that the scenario where Brittany is the only one to refuse to give the most severe shock has probability $(0.35)^1(0.65)^3$.\footnote{$P(A=\text{\resp{shock}},\text{ }B=\text{\resp{refuse}},\text{ }C=\text{\resp{shock}},\text{ }D=\text{\resp{shock}}) = (0.65)(0.35)(0.65)(0.65) = (0.35)^1(0.65)^3$.}
 \end{exercise}
 
+\textB{\pagebreak}
 \subsection{The binomial distribution}
 
 The scenario outlined in Example~\ref{oneRefuser} is a special case of what is called the binomial distribution. The \termsub{binomial distribution}{distribution!binomial} describes the probability of having exactly $k$ successes in $n$ independent Bernoulli trials with probability of a success $p$  (in Example~\ref{oneRefuser}, $n=4$, $k=1$, $p=0.35$). We would like to determine the probabilities associated with the binomial distribution more generally, i.e. we want a formula where we can use $n$, $k$, and $p$ to obtain the probability. To do this, we reexamine each part of the example.
@@ -464,8 +465,6 @@ p^k(1-p)^{n-k}
 \end{eqnarray*}
 This is our general formula for $P($single scenario$)$.
 
-\textB{\pagebreak}
-
 Secondly, we introduce a general formula for the number of ways to choose $k$ successes in $n$ trials, i.e. arrange $k$ successes and $n-k$ failures:
 \begin{eqnarray*}
 {n\choose k} = \frac{n!}{k!(n-k)!}
@@ -480,6 +479,11 @@ The quantity ${n\choose k}$ is read \term{n choose k}.\footnote{Other notation f
 && \vdots \\
 && n! = n\times(n-1)\times...\times3\times2\times1
 \end{eqnarray*}
+
+
+\textB{\pagebreak}
+
+
 Using the formula, we can compute the number of ways to choose $k=1$ successes in $n=4$ trials:
 \begin{eqnarray*}
 {4 \choose 1} = \frac{4!}{1!(4-1)!} =  \frac{4!}{1!3!} 
