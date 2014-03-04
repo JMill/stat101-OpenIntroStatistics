@@ -230,12 +230,7 @@ $H_A$: Alternate model. The treatment and cardiovascular problems are not indepe
 \end{center}
 Then compute the probability: $P(HIV | +) = \frac{P(HIV~and~+)}{P(+)} = \frac{0.259 \times 0.997}{0.259 \times 0.997 + 0.741 \times 0.074}= \frac{0.2582}{0.3131} = 0.8247$.}
 
-% 25
-\eocesol{A tree diagram of the situation:
-\begin{center}
-\includegraphics[width=0.48\textwidth]{02/figures/eoce/tree/tree_lupus}
-\end{center}
-$P(\text{lupus} | \text{positive}) = \frac{P(\text{\text{lupus~and~positive}})}{P(\text{positive})} = \frac{0.0196}{0.0196 + 0.2548} = 0.0714$. Even when a patient tests positive for lupus, there is only a 7.14\% chance that he actually has lupus. While House is not exactly right -- it is possible that the patient has lupus -- his implied skepticism is warranted.}
+% remove 25 (bayes)
 
 % 27
 \eocesol{(a) 0.3.
@@ -259,60 +254,7 @@ $P(\text{lupus} | \text{positive}) = \frac{P(\text{\text{lupus~and~positive}})}{
 
 \end{multicols}
 
-% 35
-\eocesol{(a)~The table below summarizes the probability model:
-\begin{center}\tiny
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular} { l | l | l | l | l | l}
-Event 	& X		& P(X)										& X $\cdot$ P(X) 	& $(X - E(X))^2$	& $(X - E(X))^2 \cdot P(X)$ \\
-\hline
-3 hearts	& 50		& $\frac{13}{52} \times \frac{12}{51} \times \frac{11}{50} = 0.0129$	& 0.65		& $(0.65 - 3.59)^2 = 8.6436 $	& $8.6436 \times 0.0129 = 0.1115$ 	 \\
-3 blacks	& 25		& $\frac{26}{52} \times \frac{25}{51} \times \frac{24}{50} = 0.1176$	& 2.94		& $(2.94 - 3.59)^2 = 0.4225 $	& $0.4225 \times 0.1176 = 0.0497$  \\
-Else		& 0		& $1 - (0.0129 + 0.1176) = 0.8695$					& 0 			& $(0 - 3.59)^2 = 12.8881 $	& $12.8881 \times 0.8695 = 11.2062$ \\
-\hline
-		&		&											& E(X) = \$3.59 & 						& $V(X) = 11.3674 $ \\
-\multicolumn{5}{l |}{}  																				& $SD(X) = \sqrt{V(X)} = 3.37$
-\end{tabular}
-\end{center}
-(b)~$E(X - 5) = E(X) - 5 = 3.59 - 5 = -\$1.41$. The standard deviation is the same as the standard deviation of $X$: \$3.37.
-(c)~No. The expected earnings is negative, so on average you would lose money playing the game.}
-
-\begin{multicols}{2}
-
-% 37
-\eocesol{\begin{center}\scriptsize
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular} {l | l | l | l}
-Event 		& $X$ 	& $P(X)$ 			& $X \cdot P(X)$	  \\
-\hline
-Boom		& 0.18	& $\frac{1}{3}$ 		& $0.18 \times \frac{1}{3} = 0.06$ 	  \\
-Normal		& 0.09	& $\frac{1}{3}$ 		& $0.09 \times \frac{1}{3} = 0.03$  \\
-Recession	& -0.12	& $\frac{1}{3}$		& $-0.12 \times \frac{1}{3} = -0.04$  \\
-\hline
-&&& $E(X) = 0.05$ 
-\end{tabular}
-\end{center}
-The expected return is a 5\% increase in value for a single year.}
-
-% 39
-\eocesol{(a)~Expected: -\$0.16. Variance: 8.95. SD:~\$2.99.
-(b)~Expected: -\$0.16. SD:~\$1.73.
-(c)~Expected values are the same, but the SDs differ. The SD from the game with tripled winnings/losses is larger, since the three independent games might go in different directions (e.g. could win one game and lose two games).  So the three independent games is lower risk, but in this context it just means we are likely to lose a more stable amount since the expected value is still negative.}
-
-% 41
-\eocesol{A fair game has an expected value of zero: $\$5\times 0.46 + x\times 0.54 = 0$. Solving for $x$: -\$4.26. You would bet \$4.26 for the Padres to make the game fair.}
-
-% 43
-\eocesol{(a)~Expected: \$3.90. SD: \$0.34.
-(b)~Expected: \$27.30. SD: \$0.89. If you computed part~(b) using part~(a), you should have obtained an SD of \$0.90.}
-
-% 45
-\eocesol{Approximate answers are OK. Answers are only estimates based on the sample. (a)~$(29+32)/144 = 0.42$.
-(b)~$21/144 = 0.15$.
-(c)~$(26+12+15)/144 = 0.37$.}
-
-\end{multicols}
-
+% remove 35 through 43 (odds)
 
 
 
